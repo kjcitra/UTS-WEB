@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir - Toko E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes full height */
+        }
+
+        header {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+            position: fixed; /* Make header fixed */
+            top: 0;
+            z-index: 1000; /* Ensure header is above content */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align content at the top */
+            flex: 1; /* Allow main to grow and take available space */
+            margin-top: 80px; /* Space for fixed header */
+            padding: 1rem;
+            overflow: auto; /* Allow scrolling if needed */
+        }
+
+        .form-section,
+        .order-summary {
+            background: white;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 100%; /* Use full width */
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            position: fixed; /* Fix footer to bottom */
+            bottom: 0; /* Fix at the bottom of the viewport */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toko E-Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Formulir Pemesanan</h2>
+            <form>
+                <div class="form-group">
+                    <label for="product">Nama Produk:</label>
+                    <input type="text" id="product" name="product" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Jumlah:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Alamat Pengiriman:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </section>
+
+        <section class="order-summary">
+            <h2>Riwayat Pesanan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>Jumlah</th>
+                        <th>Alamat</th>
+                        <th>Tanggal Pesanan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Produk 1</td>
+                        <td>2</td>
+                        <td>Jl. romangpolong No. 1</td>
+                        <td>01 Jan 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Produk 2</td>
+                        <td>1</td>
+                        <td>Jl. gowa No. 2</td>
+                        <td>02 Jan 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Produk 3</td>
+                        <td>3</td>
+                        <td>Jl. samata No. 3</td>
+                        <td>03 Jan 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toko Ciciw. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

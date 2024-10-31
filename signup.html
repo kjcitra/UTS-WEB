@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Toko E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Simulasi pengalihan setelah pendaftaran
+        function showSuccessMessage() {
+            document.getElementById("success-message").style.display = "block";
+            setTimeout(() => {
+                window.location.href = "login.html"; // Arahkan ke halaman login setelah 3 detik
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Toko E-Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="form.html">Formulir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <h2>Daftar Akun Baru</h2>
+            <div id="success-message" style="display:none;">
+                <p>Anda berhasil mendaftar! Anda akan diarahkan ke halaman login...</p>
+            </div>
+            <form onsubmit="showSuccessMessage(); return false;">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Daftar</button>
+            </form>
+            <p>Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toko E-Commerce. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

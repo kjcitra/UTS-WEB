@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .store-description,
+        .featured-products,
+        .best-sellers,
+        .other-products {
+            padding: 2rem;
+            background: white;
+            margin: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background: #e8f5e9; /* Light green */
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            margin: 1rem;
+            padding: 1rem;
+            text-align: center;
+            width: calc(45% - 2rem); /* Adjust width */
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toko E-Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="form.html">form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Store Description Section -->
+        <section class="store-description">
+            <h2>Selamat Datang di Toko ciciw</h2>
+            <p>Toko ciciw menyediakan berbagai produk berkualitas dari brand terpercaya. Kami berkomitmen untuk memberikan pelayanan terbaik, harga yang bersaing, dan produk berkualitas untuk memenuhi kebutuhan Anda. Temukan produk favorit Anda dan nikmati pengalaman berbelanja yang mudah dan nyaman.</p>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <h2>Produk Unggulan</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="c:\Users\Aisyah\Downloads\71f3f5e3d6c17a54ff3acfdd3d756647.jpg" alt="Produk Unggulan 1">
+                    <h3>Produk Unggulan 1</h3>
+                    <p>Harga: Rp150.000</p>
+                    <form action="form.html" method="POST">
+                        <input type="hidden" name="product_id" value="1">
+                        <input type="hidden" name="product_name" value="Produk Unggulan 1">
+                        <input type="hidden" name="price" value="150000">
+                        <button type="submit">Tambahkan ke Keranjang</button>
+                    </form>
+                </div>
+
+                <div class="product-card">
+                    <img src="c:\Users\Aisyah\Downloads\a3f71c0eae69b0f77c51631bbf2e7f17.jpg" alt="Produk Unggulan 2">
+                    <h3>Produk Unggulan 2</h3>
+                    <p>Harga: Rp200.000</p>
+                    <form action="form.html" method="POST">
+                        <input type="hidden" name="product_id" value="2">
+                        <input type="hidden" name="product_name" value="Produk Unggulan 2">
+                        <input type="hidden" name="price" value="200000">
+                        <button type="submit">Tambahkan ke Keranjang</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section class="best-sellers">
+            <h2>Produk Terbaik</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="c:\Users\Aisyah\Downloads\452f4fd9d4245ba27dfda41af8204d64.jpg" alt="Produk Terbaik 1">
+                    <h3>Produk Terbaik 1</h3>
+                    <p>Harga: Rp250.000</p>
+                    <form action="form.html" method="POST">
+                        <input type="hidden" name="product_id" value="3">
+                        <input type="hidden" name="product_name" value="Produk Terbaik 1">
+                        <input type="hidden" name="price" value="250000">
+                        <button type="submit">Tambahkan ke Keranjang</button>
+                    </form>
+                </div>
+
+                <div class="product-card">
+                    <img src="c:\Users\Aisyah\Downloads\8d5ff8108637a2771a97826ac0d1eeb4.jpg" alt="Produk Terbaik 2">
+                    <h3>Produk Terbaik 2</h3>
+                    <p>Harga: Rp300.000</p>
+                    <form action="foorm.html" method="POST">
+                        <input type="hidden" name="product_id" value="4">
+                        <input type="hidden" name="product_name" value="Produk Terbaik 2">
+                        <input type="hidden" name="price" value="300000">
+                        <button type="submit">Tambahkan ke Keranjang</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Products Section -->
+        <section class="other-products">
+            <h2>Produk Lainnya</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="c:\Users\Aisyah\Downloads\9d98925540764ef33ea350e848622e2a.jpg" alt="Produk Lainnya 1">
+                    <h3>Produk Lainnya 1</h3>
+                    <p>Harga: Rp120.000</p>
+                    <form action="foorm.html" method="POST">
+                        <input type="hidden" name="product_id" value="5">
+                        <input type="hidden" name="product_name" value="Produk Lainnya 1">
+                        <input type="hidden" name="price" value="120000">
+                        <button type="submit">Tambahkan ke Keranjang</button>
+                    </form>
+                </div>
+
+                <div class="product-card">
+                    <img src="c:\Users\Aisyah\Downloads\ef60528955397c35f7d3165082383200.jpg" alt="Produk Lainnya 2">
+                    <h3>Produk Lainnya 2</h3>
+                    <p>Harga: Rp140.000</p>
+                    <form action="form.html" method="POST">
+                        <input type="hidden" name="product_id" value="6">
+                        <input type="hidden" name="product_name" value="Produk Lainnya 2">
+                        <input type="hidden" name="price" value="140000">
+                        <button type="submit">Tambahkan ke Keranjang</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toko Ciciw. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
